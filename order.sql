@@ -22,5 +22,6 @@ delivery_notes varchar2(128),
 status_id varchar2(8)
   constraint order_status_id_nn not null,
 
-  constraint order_status_id_fk foreign key (status_id) references status(status_id) 
+  constraint order_status_id_fk foreign key (status_id) references status(status_id),
+  constraint order_customer_id_fk foreign key (customer_id) references customer(customer_id)
 );
