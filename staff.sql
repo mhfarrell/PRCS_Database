@@ -14,7 +14,7 @@ username varchar2(16)
 	constraint staff_username_nn unique,
 email varchar2(128)
 	constraint staff_email_nn not null
-	constraint staff_email_chk check(regexp_like(email,'^(\S+)\@(\S+)\.(\S+)$'),	
+	constraint staff_email_chk check(regexp_like(email,'^(\S+)\@(\S+)\.(\S+)$')),	
 phone_no varchar2(16)
 	constraint staff_phone_no_nn not null,
 house_no number(8),
